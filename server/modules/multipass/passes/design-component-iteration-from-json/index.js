@@ -9,6 +9,7 @@ require("dotenv").config();
 const path = require("path");
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
+  baseURL: process.env.OPENAI_BASE_URL,
 });
 
 function _titleCase(str) {
